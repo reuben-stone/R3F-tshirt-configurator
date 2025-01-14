@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './styles/global.css';
+import { App as Canvas } from './components/canvas/canvas';
+import Overlay from './overlay'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Canvas />
+    <Overlay />
   </React.StrictMode>
 );
 
